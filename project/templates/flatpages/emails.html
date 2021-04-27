@@ -1,13 +1,14 @@
 <! -- наследование шаблона default -->
 {% extends 'flatpages/default.html' %}
 
-{% block title %} About {% endblock title %}
+{% block title %} EMAIL {% endblock title %}
 
 <! -- начало контента -->
 {% block content %}
 
-<h1>About Us</h1>
-{{ flatpage.content }}
+<h1><i>E-mails</i></h1>
+<i>{{ flatpage.content }}</i>
+
 
 <! -- конец контента -->
 {% endblock content %}
