@@ -18,5 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # чтобы адреса в будущем написанных нами страничках были доступны
+    # нам для перехода по ним, добавим ещё один путь:
     path('pages/', include('django.contrib.flatpages.urls')),
 ]
